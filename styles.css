@@ -1,45 +1,62 @@
- @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
-
+ @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
  *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Pattaya',sans-serif;
+    font-family: 'Lora',sans-serif;
  }
 
  body{
-    background-color: #d2d2d2;
+    background-color: #003329;
  }
- .background{
-    width:100%;
-    height:100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(56, 43, 157, 0.7)),url(sky.jpeg);
-    background-position: center;
-    background-size: cover;
-    padding-left: 8%;
-    padding-left: 8%;
-    box-sizing: border-box;
+ .parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
  }
- .container{
-    width:450px;
-    
-    background-image: linear-gradient(rgba(11, 6, 81, 0.7),rgba(56, 43, 157, 0.7)),url(beautiful.jpeg);
-    padding: 70px 40px;
+ #text{
     position: absolute;
-    transform: translate(-50%,-50%);
-    left:50%;
-    top: 50%;
-    box-shadow: 0 20px 25px rgba(186, 45, 114, 0.25);
-    border-radius: 15px;
-    font-size: 18px;
-}
-.box{
-    width: 51%;
-    margin-left: 95px;
-    margin-bottom: 42px;
+    font-size: 5em;
+    color:#fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 
+ }
+ .parallax img{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    pointer-events: none;
+ }
+ .sec{
+    position: relative;
+    background-color: #003329;
+    padding: 100px;
+    margin-bottom: 150px;
+ }
+  .sec h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#fff;
+    margin-left: 90px;
+ }
+ 
+ .container{
+    margin-top: 80px;
+    width:450px;
+    position: absolute;
+    transform: translate(50%,50%);
+    left:0;
+    top: 0;
+    margin-left: 200px;
+    font-size: 18px;
+    color:#fff;
 }
-input{
+
+
+ input{
     width: 100%;
     height: 50px;
     border-radius:9px;
@@ -54,7 +71,7 @@ label{
     border:2px  #b73866;
     border-radius: 3px;
 }
-input:focus{
-    border: 2px dashed #e2d4df;
-    background-color: #696165;
+ input:focus{
+    border: 2px none #e2d4df;
+    background-color: #a59fa2;
 }
